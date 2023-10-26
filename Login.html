@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+    <style>
+        body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+html{
+  background: url(https://images.hdqwalls.com/download/colorful-mountains-night-minimal-8k-w5-1366x768.jpg)
+}
+.container {
+  width: 1000px;
+  height: 550px;
+  margin: 80px;
+  margin-left: 180px;
+  display: flex;
+  background: rgb(140, 133, 168);
+}
+.login {
+  width: 500px;
+}
+form {
+  width: 230px;
+  margin: 100px auto;
+}
+form h1 {
+  text-align: center;
+}
+form label {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 8px;
+}
+input {
+  width: 100%;
+  padding: 8px;
+  margin: 8px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+button {
+  width: 250px;
+  margin: 8px;
+  padding: 8px;
+  background: rgb(182, 0, 127);
+  border: rgb(182, 0, 127);
+  border-radius: 20px;
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+button span {
+  position: relative;
+  transition: 0.5s;
+}
+button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+}
+button:hover span {
+  padding-right: 30px;
+}
+button:hover span:after {
+  opacity: 1;
+}
+
+.pic img {
+  width: 100%;
+  height: 100%;
+};
+    </style>   
+  
+  <head>
+    <title>Login Form</title>
+  </head>
+
+  <body>
+
+    <script>
+      function auth() {
+          var username = document.getElementById("username").value;
+          var password = document.getElementById("password").value;
+          
+          if(username === "styleencore" && password === "styleencore"){
+             alert("Login Successfully");
+             window.open('index.html')
+            } 
+            else {
+                  alert("Invalid Info");
+                  return;
+          }
+      }
+          </script>
+    <div class="container">
+      <div class="login">
+        <form>
+          <h1>Login</h1>
+          <hr/>
+          
+          <label for="username">Enter your username :</label>
+          <input type="text" id="username" placeholder="Username" required>
+          <label for="password">Enter your password :</label>
+          <input type="password" id="password" placeholder="Password" required>
+          <a href="index.html"><button onclick="auth();"><span>LOGIN</span></button></a>
+          <button><span>SIGNUP</span></button>
+         
+        </closeform>
+      </form>
+      </div>
+      <div class="pic">
+        <img src="ll.png" />
+      </div>
+
+      </div>
+    
+    </div>
+  </body>
+</html>
